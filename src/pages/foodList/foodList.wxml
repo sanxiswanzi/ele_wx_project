@@ -1,0 +1,118 @@
+
+<view class="index_like">
+
+<scroll-view class="scrool-y"
+scroll-y
+>
+<view class="in_like" >
+    
+    <view class="in_like_list">
+
+      <view class="like_list_item">
+        <view class="list_item_left">
+          <image src="/assest/swiper/1.jpg" mode="widthFix"/>
+        </view>
+        <view class="like_item_right">
+          <view class="right_head">
+            <!-- -->
+            <text class="right_head_text">店铺</text>
+            <van-icon name="ellipsis" />
+           </view>
+          <view class="right_start">
+            <text class="start1">4.8分</text>
+            <text class="start2">月售1000+</text>
+          </view>
+          <view class="right_text_yan">
+            米线米粉一碗香
+          </view>
+          <view class="right_you">
+            <text>优惠</text>
+            <van-icon name="plus" />
+          </view>
+        </view>
+
+      </view>
+
+      <view class="like_list_item">
+        <view class="list_item_left">
+          <image src="/assest/swiper/1.jpg" mode="widthFix"/>
+        </view>
+        <view class="like_item_right">
+          <view class="right_head">
+            <!-- -->
+            <text class="right_head_text">店铺</text>
+            <van-icon name="ellipsis" />
+           </view>
+          <view class="right_start">
+            <text class="start1">4.8分</text>
+            <text class="start2">月售1000+</text>
+          </view>
+          <view class="right_text_yan">
+            米线米粉一碗香
+          </view>
+          <view class="right_you">
+            <text>优惠</text>
+            <van-icon name="plus" />
+          </view>
+        </view>
+
+      </view>
+      <view class="like_list_item">
+        <view class="list_item_left">
+          <image src="/assest/swiper/1.jpg" mode="widthFix"/>
+        </view>
+        <view class="like_item_right">
+          <view class="right_head">
+            <!-- -->
+            <text class="right_head_text">店铺</text>
+            <van-icon name="ellipsis" />
+           </view>
+          <view class="right_start">
+            <text class="start1">4.8分</text>
+            <text class="start2">月售1000+</text>
+          </view>
+          <view class="right_text_yan">
+            米线米粉一碗香
+          </view>
+          <view class="right_you">
+            <text>优惠</text>
+            <van-icon name="plus" />
+          </view>
+        </view>
+
+      </view>
+      <view class="like_list_item">
+        <view class="list_item_left">
+          <image src="/assest/swiper/1.jpg" mode="widthFix"/>
+        </view>
+        <view class="like_item_right">
+          <view class="right_head">
+            <!-- -->
+            <text class="right_head_text">店铺</text>
+            <van-icon name="ellipsis" />
+           </view>
+          <view class="right_start">
+            <text class="start1">4.8分</text>
+            <text class="start2">月售1000+</text>
+          </view>
+          <view class="right_text_yan">
+            米线米粉一碗香
+          </view>
+          <view class="right_you">
+            <text>优惠</text>
+            <van-icon name="plus" />
+          </view>
+        </view>
+
+      </view>
+
+
+    </view>
+  </view>
+  
+</scroll-view>
+
+
+
+
+</view>

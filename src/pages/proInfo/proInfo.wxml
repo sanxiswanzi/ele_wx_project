@@ -1,0 +1,106 @@
+
+<!-- 个人中心 -->
+<view class="my_top">
+
+  <!-- <view class="my_height">
+    我的页面
+  </view> -->
+  <!-- 个人头像信息 -->
+  <view class="my_info">
+    <view class="info_left">
+      <image class="info_left_img" src="/assest/iconImg/cart_s.png" mode="" />
+    </view>
+    <view class="info_right">
+      <text>我的名字</text>
+      <text>手机号</text>
+    </view>
+  </view>
+  <!-- 会员信息 -->
+  <view class="my_member">
+    <view class="my_member_main">
+      <view class="my_member_left">
+        <view class="member_left_text">未成为会员</view>
+        <view>下单获赠吃货豆，豆兑换万物</view>
+      </view>
+      <view class="my_member_right">
+        吃货豆>
+      </view>
+    </view>
+  </view>
+  <!-- 超级吃货卡 -->
+  <view class="supercard">
+    <view class="my_supercard">
+      <view class="my_item">
+        <image src="/assest/iconImg/cart_s.png" mode="" />
+        <text class="my_item_text">吃货卡</text>
+        <text class="my_item_text_span">无门槛红包</text>
+      </view>
+      <view class="my_item">
+        <image src="/assest/iconImg/cart_s.png" mode="" />
+        <text class="my_item_text">红包</text>
+        <text class="my_item_text_span">17张到期</text>
+      </view>
+      <view class="my_item">
+        <image src="/assest/iconImg/cart_s.png" mode="" />
+        <text class="my_item_text">余额</text>
+        <text class="my_item_text_span">0元</text>
+      </view>
+    </view>
+  </view>
+  <!-- 常用工具 -->
+  <view class="offer_toods">
+    <view class="toods">
+      <view class="offer_toods_text">常用工具</view>
+      <view class="offer_toods_main">
+        <view class="toods_main">
+          <image src="/assest/iconImg/cart_s.png" mode="" />
+          <text>我的地址</text>
+        </view>
+
+        <view class="toods_main">
+          <image src="/assest/iconImg/cart_s.png" mode="" />
+          <text>我的地址</text>
+        </view>
+        <view class="toods_main">
+          <image src="/assest/iconImg/cart_s.png" mode="" />
+          <text>我的地址</text>
+        </view>
+        <view class="toods_main">
+          <image src="/assest/iconImg/cart_s.png" mode="" />
+          <text>我的地址</text>
+        </view>
+        <view class="toods_main">
+          <image src="/assest/iconImg/cart_s.png" mode="" />
+          <text>我的地址</text>
+        </view>
+        <view class="toods_main">
+          <image src="/assest/iconImg/cart_s.png" mode="" />
+          <text>我的地址</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 下单得金豆 -->
+  <view class="my_foot_fun">
+    <view class="my_funt">
+      <view class="my_funt_left">
+            <view class="funt_left_text">
+                  <text>下单得400金豆</text>
+                  <text>可兑换红包纸巾等</text>
+                  <image src="/assest//jindou.png" mode=""/>
+                  <button class="left_text_btn" plain> 去兑换</button>
+            </view>
+      </view>
+      <view class="my_funt_left">
+            <view class="funt_left_text">
+                  <text class="text_yao">邀请好友赚现金</text>
+                
+                  <image src="/assest/hb.png" mode=""/>
+                  <button plain >查佣金</button>
+            </view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/placeMeun/placeMeun",
+    "pages/cart/cart",
+    "pages/proInfo/proInfo",
+    "pages/foodDetail/foodDetail",
+    "pages/order/order",
+    "pages/foodList/foodList",
+    "pages/paySucess/paySucess",
+    "pages/search/search",
+    "pages/login/login"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/assest/iconImg/home_x.png",
+        "selectedIconPath": "/assest/iconImg/home_s.png"
+      },
+      {
+        "text": "点单",
+        "pagePath": "pages/placeMeun/placeMeun",
+        "iconPath": "/assest/iconImg/dian_x.png",
+        "selectedIconPath": "/assest/iconImg/dian_s.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/cart/cart",
+        "iconPath": "/assest/iconImg/cart_x.png",
+        "selectedIconPath": "/assest/iconImg/cart_s.png"
+      },
+      {
+        "text": "订单",
+        "pagePath": "pages/order/order"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/proInfo/proInfo",
+        "iconPath": "/assest/iconImg/my_x.png",
+        "selectedIconPath": "/assest/iconImg/my_s.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom",
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#eaeaea",
+    "enablePullDownRefresh": true
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "foodDetail": "pages/foodDetail/foodDetail"
+  }
+}

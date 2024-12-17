@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "orderListItem":"/components/orderListItem/orderListItem"
+  },
+  "navigationStyle": "default",
+  "navigationBarTitleText":"我的订单",
+  "navigationBarBackgroundColor":"#e2b659"
+}

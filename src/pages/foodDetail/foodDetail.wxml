@@ -1,0 +1,124 @@
+<!--pages/foodDetail/foodDetail.wxml-->
+<!-- 食物详情 -->
+
+<view class="food_top">
+  <!-- 食物详情图片 -->
+  <swiper class="food_swiper" autoplay>
+    <swiper-item class="food_swiper_item">
+      <image src="/assest/swiper/1.jpg" mode="" />
+    </swiper-item>
+    <swiper-item class="food_swiper_item">
+      <image src="/assest/swiper/1.jpg" mode="" />
+    </swiper-item>
+    <swiper-item class="food_swiper_item">
+      <image src="/assest/swiper/1.jpg" mode="" />
+    </swiper-item>
+  </swiper>
+
+  <!-- food_main_center -->
+  <view class="food_main_center">
+    <view class="food_main">
+      <view class="food_main_price">
+        价格
+      </view>
+      <view class="food_main_oldprice">
+        就的价格
+      </view>
+      <view class="food_main_title">
+        商品标题
+      </view>
+      <view class="food_main_detail">
+        新鲜的石材
+      </view>
+      <view class="food_main_yue">
+        <text>月售1000</text>
+        <button plain type="primary" bind:tap="showPopup">加入购物车</button>
+      </view>
+
+
+    </view>
+  </view>
+
+  <!-- 商品详情 -->
+  <view class="food_detail_center">
+    <view class="food_detail">
+      <text class="miao">商品详情</text>
+      <view class="food_detail_main">
+        <view class="food_detail_left">
+          <text class="detail_left_item">商品描述</text>
+          <text class="detail_left_item">商品描述</text>
+          <text class="detail_left_item">商品描述</text>
+          <text class="detail_left_item">商品描述</text>
+          <text class="detail_left_item">商品描述</text>
+          <text class="detail_left_item">商品描述</text>
+        </view>
+        <view class="food_detail_right">
+          <text class="detail_right_item">新鲜的肥牛</text>
+          <text class="detail_right_item">新鲜的肥牛</text>
+          <text class="detail_right_item">新鲜的肥牛</text>
+          <text class="detail_right_item">新鲜的肥牛</text>
+          <text class="detail_right_item">新鲜的肥牛</text>
+          <text class="detail_right_item">新鲜的肥牛</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+<!-- 购物车的弹出层 -->
+<van-popup
+  show="{{ show }}"
+  position="bottom"
+  custom-style="height: 80%;"
+  bind:close="onClose"
+  close-icon-position="top-right"
+  closeable
+>
+<!-- 标题 -->
+<view class="popup_title">
+  <view class="popup_left">
+    <image src="/assest/swiper/1.jpg" mode=""/>
+  </view>
+  <view class="popup_right">
+
+    <view class="right_title">炭烤肥牛</view>
+    <view class="right_xuan">
+      <text>已选</text>
+      <text>2串/微辣</text>
+    </view>
+    <view class="right_price">
+      $3.88
+    </view>
+  </view>
+</view>
+
+<view class="popup_main">
+    <view class="main_liang">
+      <text class="main_liang_text">分量</text>
+      <van-checkbox value="{{ checked }}" >1个</van-checkbox>
+    </view>
+    <view class="main_la">
+      <text class="main_la_text">辣度</text>
+        <van-checkbox-group class="cheanck" value="{{ result }}" bind:change="onChange">
+            <van-checkbox name="a">微辣</van-checkbox>
+            <van-checkbox name="b">中辣</van-checkbox>
+            <van-checkbox name="c">超级辣</van-checkbox>
+       </van-checkbox-group>
+    </view>
+    <view class="main_num">
+      <text class="main_num_text">数量</text>
+      <van-stepper value="{{ stepper }}" bind:change="onChangestepper" />
+    </view>
+
+    <view class="main_button">
+      <button plain bind:tap="onSubimt">加入购物车</button>
+    </view>
+</view>
+
+
+</van-popup>
+
+
+
+
+</view>

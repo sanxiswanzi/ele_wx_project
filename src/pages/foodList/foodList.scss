@@ -1,0 +1,104 @@
+/* pages/foodList/foodList.wxss */
+.index_like{
+ 
+  .scrool-y{
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+    background-color: #f5eaea;
+
+    .in_like{
+      padding: 20rpx;
+      width: 90%;
+      box-sizing: border-box;
+      height: 800px;
+      margin:  0 auto;
+  
+      //列表
+      .in_like_list{
+        display: flex;
+       
+        flex-direction: column;
+        .like_list_item{
+          padding: 20rpx;
+          height: 220rpx !important;
+          display: flex;
+          margin-top: 20rpx;
+          justify-content:flex-start;   
+          background-color: white;
+          border-radius: 10rpx;
+          
+  
+          .list_item_left{
+           display: flex;
+           align-items: center;
+            image{
+              border-radius: 20rpx;
+              width: 180rpx;
+            
+            }
+          }
+  
+          .like_item_right{
+            width: 100%;
+            margin-left: 20rpx;
+          
+  
+  
+            .right_head{
+              display: flex;
+              justify-content: space-between;
+              .right_head_text{
+                font-size: 36rpx;
+                font-weight: bold;
+              }
+              .van-icon-ellipsis{
+                font-size: 36rpx;
+                color: var(--color999);
+              }
+            }
+            .right_start{
+              display: flex;
+              justify-content: left;
+             text-align: left;
+              .start1{
+                font-size: 32rpx;
+                color: orange;
+              }
+              .start2{
+                margin-left: 20rpx;
+                color:var(--color6);
+              }
+            }
+            .right_text_yan{
+              width: 300rpx;
+              background-color: orange;
+              padding: 8rpx;
+              box-sizing: border-box;
+              border-radius: 10rpx;
+            }
+            .right_you{
+              margin-top: 6rpx;
+              display: flex;
+              justify-content: space-between;
+              .van-icon-plus{
+                border-radius: 50%;
+                background-color: skyblue;
+                font-size: 40rpx;
+                color: white;
+              }
+            }
+  
+          }
+         
+        }
+  
+      } 
+  
+    }
+
+
+
+  }
+
+}

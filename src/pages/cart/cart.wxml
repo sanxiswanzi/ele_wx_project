@@ -1,0 +1,146 @@
+
+<!-- 购物车列表 -->
+<view class="cart_top_list">
+  <view class="cart_list">
+   
+      <view class="top_title_left">
+        <text class="title_left_text">我的购物车</text>
+        <text>我的订单</text>
+      </view>
+  <!-- 购物车标题 -->
+    <view class="cart_list_title">
+        <view class="cart_list_on1">
+          <van-checkbox value="{{ cartChecked }}" shape="square" bind:change="onChangeCartCheack"></van-checkbox>
+        </view>
+        <view class="cart_list_on2">
+        商品名称
+        </view>
+        <view class="cart_list_on3">
+        单价
+        </view>
+        <view class="cart_list_on4">
+        数量
+        </view>
+        <!-- <view class="cart_list_on5">
+        小计
+        </view> -->
+        <view class="cart_list_on6">
+        操作
+        </view>
+    </view>
+    <!-- 每一个商品 -->
+
+    <view class="cart_item">
+      <view class="cheack">
+        <van-checkbox value="{{ cartChecked }}" shape="square" bind:change="onChangeCartCheack"></van-checkbox>
+      </view>
+      <view class="cart_good_name">
+        商品名称
+      </view>
+      <view class="cart_good_price">
+        <text>3200元</text>
+      </view>
+      <view class="cart_good_num">
+        <van-stepper disable-input	 value="{{ 1 }}" bind:change="onChange" />
+      </view>
+      <!-- <view class="cart_good_min_sum">
+        <text>3000</text>
+        <text>元</text>
+      </view> -->
+      <view class="cart_good_del">
+        <van-icon name="cross" />
+      </view>
+
+    </view>
+    <view class="cart_item">
+      <view class="cheack">
+        <van-checkbox value="{{ cartChecked }}" shape="square" bind:change="onChangeCartCheack"></van-checkbox>
+      </view>
+      <view class="cart_good_name">
+        商品名称
+      </view>
+      <view class="cart_good_price">
+        <text>3200元</text>
+      </view>
+      <view class="cart_good_num">
+        <van-stepper disable-input	 value="{{ 1 }}" bind:change="onChange" />
+      </view>
+      <!-- <view class="cart_good_min_sum">
+        <text>3000</text>
+        <text>元</text>
+      </view> -->
+      <view class="cart_good_del">
+        <van-icon name="cross" />
+      </view>
+
+    </view>
+    <view class="cart_item">
+      <view class="cheack">
+        <van-checkbox value="{{ cartChecked }}" shape="square" bind:change="onChangeCartCheack"></van-checkbox>
+      </view>
+      <view class="cart_good_name">
+        商品名称
+      </view>
+      <view class="cart_good_price">
+        <text>3200元</text>
+      </view>
+      <view class="cart_good_num">
+        <van-stepper disable-input	 value="{{ 1 }}" bind:change="onChange" />
+      </view>
+      <!-- <view class="cart_good_min_sum">
+        <text>3000</text>
+        <text>元</text>
+      </view> -->
+      <view class="cart_good_del">
+        <van-icon name="cross" />
+      </view>
+
+    </view>
+    <view class="cart_item">
+      <view class="cheack">
+        <van-checkbox value="{{ cartChecked }}" shape="square" bind:change="onChangeCartCheack"></van-checkbox>
+      </view>
+      <view class="cart_good_name">
+        商品名称
+      </view>
+      <view class="cart_good_price">
+        <text>3200元</text>
+      </view>
+      <view class="cart_good_num">
+        <van-stepper disable-input	 value="{{ 1 }}" bind:change="onChange" />
+      </view>
+      <!-- <view class="cart_good_min_sum">
+        <text>3000</text>
+        <text>元</text>
+      </view> -->
+      <view class="cart_good_del">
+        <van-icon name="cross" />
+      </view>
+
+    </view>
+
+    <!-- 购物车结算 -->
+    <view class="cart_foot">
+      <view class="cart_foot_left">
+        <text class="foot_left_text">继续购物</text>
+        <text class="foot_left_text2">|</text>
+        <view class="foot_left_text3">已选择<text class="t3"> 0 </text>件</view>
+      </view>
+      <view class="cart_foot_right">
+        <view class="foot_right_text">
+          合计 <text>0</text> 元
+        
+        </view>
+        <button plain>去结算</button>
+        
+    </view>
+ 
+    </view>
+
+
+
+    
+
+
+  </view>
+</view>

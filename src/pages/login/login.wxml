@@ -1,0 +1,15 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="login_btn">
+    <view class="user_in">
+      <button>授权并登录</button>
+      <view class="user_xie">
+        <van-checkbox value="{{ checked }}" shape="square" bind:change="onChange">
+
+      </van-checkbox>
+
+      <text>同意《用户协议》{{token}}</text>
+    </view>
+    </view>
+  </view>
+</view>

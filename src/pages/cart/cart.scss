@@ -1,0 +1,146 @@
+/* pages/cart/cart.wxss */
+.cart_top_list{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+  background-color: #eaeaee ;
+  .cart_list{
+    width: 90%;
+    padding: 20rpx;
+  
+
+    .top_title_left{
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 20rpx;
+     
+      .title_left_text{
+        font-size: 40rpx;
+      }
+    }
+
+    .cart_list_title{
+      margin-top: 30rpx;
+      display: flex;
+      height: 100rpx;
+      padding: 20rpx;
+      font-size: 26rpx;
+      justify-content:space-between;
+      background-color: white;
+      align-items: center;
+      border-bottom: 1px solid #999999;
+      .van-checkbox__icon--square{
+        font-size:32rpx !important ;
+      }
+      .cart_list_on2{
+        width: 30%;
+      }
+      .cart_list_on4{
+        width: 180rpx;
+        text-align: center;
+      }
+    }
+    .cart_item{
+      display: flex;
+      padding: 20rpx;
+      justify-content: space-between;
+      height: 160rpx;
+      align-items: center;
+      background-color: white;
+      font-size: 26rpx;
+       border-bottom: 1px solid #999 ;
+
+      .van-checkbox__icon--square{
+        font-size:32rpx !important ;
+      }
+      .van-stepper{
+        width: 200rpx !important;
+      }
+
+      .cart_good_name{
+        width: 30%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .cart_good_min_sum{
+        width: 13%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: orange;
+        font-size: 34rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+     
+      }
+      
+    }
+    .cart_item:nth-last-child(2){
+      border: none;
+    }
+
+    // 
+    .cart_foot{
+      display: flex;
+      justify-content: space-between;
+      padding: 20rpx;
+      margin-top: 20rpx;
+      background-color: white;
+      flex: .2;
+      font-size: 24rpx;
+      align-items: center;
+      
+      .cart_foot_left{
+        display: flex;
+        color: #999;
+        align-items: center;
+        .foot_left_text2{
+          margin: 0 10rpx;
+        }
+        .foot_left_text3{
+          .t3{
+            color: red;
+          }
+        }
+       
+         }
+
+    //   }
+     
+      
+      .cart_foot_right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: orange;
+        .foot_right_text{
+
+          text{
+            font-size: 34rpx;
+          }
+        }
+        button{
+
+          margin: 0;
+          margin-left: 20rpx;
+          height: 60rpx;
+          font-size: 26rpx;
+          color: white;
+          height: 100%;
+          background-color: orange;
+          border: none;
+        }
+      }
+
+    }
+    
+   
+    
+
+
+  }
+
+  }
+

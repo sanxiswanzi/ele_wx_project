@@ -1,0 +1,40 @@
+/* pages/paySucess/paySucess.wxss */
+
+.pay_suss_top{
+  
+  .pay_suss{
+    padding: 20rpx;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .pay_main{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 40rpx;
+      .van-icon-success{
+        font-size: 400rpx;
+      }
+      color: orange;
+      text{
+        margin-bottom: 20rpx;
+      }
+
+      .main_order{
+
+        .van-button--info{
+          color: orange;
+          margin-top: 20rpx;
+          margin-left: 20rpx;
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,89 @@
+/* components/orderListItem/orderListItem.wxss */
+page{
+
+  .o_list_main{
+    padding: 50rpx;
+    margin-top: 20rpx;
+    background-color: white;
+    .o_list_title{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20rpx;
+    }
+    .o_list_foot_f{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text{
+        color: #999;
+      }
+      button{
+        color: orange;
+        border: 1px solid orange;
+        margin: 0;
+        font-size: 22rpx;
+      }
+    }
+
+    .o_list_item_main{
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 10rpx;
+      .item_main_left{
+        image{
+          width: 220rpx;
+          height: 220rpx;
+          border-radius: 10rpx;
+        }
+      }
+
+      .item_main_right{
+        margin-left: 20rpx;
+        width: 100%;
+       
+        .main_right_price{
+          width: 420rpx;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 10rpx;
+     
+          .right_price_text{
+          
+            overflow: hidden;
+            white-space: nowrap;            
+            text-overflow: ellipsis;
+          }
+        }
+        .main_right_detail{
+          margin-top: 10rpx;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .right_detail{
+            width: 330rpx;
+            overflow: hidden;
+            white-space: nowrap;            
+            text-overflow: ellipsis;
+          }
+        }
+        
+        .main_right_foot{
+          width: 320rpx;
+       
+        overflow: hidden;
+        white-space: nowrap;            
+        text-overflow: ellipsis;
+     
+        margin-top: 10rpx;
+        
+        }
+
+      }
+
+    }
+
+
+  }
+
+}

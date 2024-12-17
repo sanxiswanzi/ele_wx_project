@@ -1,0 +1,46 @@
+<!--components/orderListItem/orderListItem.wxml-->
+<view class="o_list_main">
+
+  <view class="o_list_title">
+    <text>标题> </text>
+    <text>交易成功</text>
+  </view>
+  <view class="o_list_item_main">
+    <view class="item_main_left">
+
+      <image src="/assest/swiper/1.jpg" mode="" />
+    </view>
+    <view class="item_main_right">
+      <view class="main_right_price">
+        <view class="right_price_text">
+          sadgadfhdaghsdfsdgfsgjhfgh
+        </view>
+        <view class="right_price_t">
+          14.90
+        </view>
+      </view>
+      <view class="main_right_detail">
+        <view class="right_detail">
+          sdagsfg描述
+        </view>
+        <text>数量</text>
+      </view>
+      <view class="main_right_foot">
+        <text>asdgfsagdfsagdfshgsdfgsdag</text>
+      </view>
+
+    </view>
+  </view>
+  <view class="o_list_foot_f">
+    <text>更多</text>
+    <!-- 待更改的元素 -->
+    <slot name="foot"></slot>
+    <slot>
+     
+    </slot>
+   
+   
+  </view>
+
+
+</view>

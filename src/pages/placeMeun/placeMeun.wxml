@@ -1,0 +1,235 @@
+<!-- 点单页 -->
+<view class="meun_back">
+  <!-- 标题 -->
+  <view class="back_top">
+    <image src="/assest/swiper/1.jpg" mode="aspectFill" />
+
+
+    <view class="munt_title_back">
+      <view class="meun_title">
+
+        <view class="meun_title_top">
+
+          <view class="title_top_left">
+            <text class="top_food">三喜的美食店</text>
+            <view class="top_left_text">
+              <text>月售1000+</text>
+              <text>食无忧</text>
+            </view>
+
+          </view>
+          <view class="title_top_right">
+            <image src="/assest/swiper/1.jpg" mode="aspectFill" />
+          </view>
+
+        </view>
+        <view class="meun_title_butt">
+          品牌创始于xx年
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <!-- 导航栏 -->
+
+  <view class="main_top_fen">
+    <view class="main_top">
+      <view class="main_top_item {{isActive == 1?'active':''}}">点餐</view>
+      <view class="main_top_item2 {{isActive == 2?'active':''}} ">评价</view>
+      <view class="main_top_item3">商家</view>
+    </view>
+  </view>
+
+  <!-- 点餐 -->
+  <!-- 能够纵向滑动 -->
+
+  <view class="scroll_main">
+    <!-- 左边滑动 -->
+    <scroll-view class="scroll_y" 
+    enhanced="true"
+    scroll-top="{{scrollTop}}"
+    scroll-into-view="{{eleId}}"
+    scroll-y>
+      <view class="scroll_main_left">
+        <!-- 初始默认id 等于当前点击id时在加上类 -->
+        <view 
+          wx:for="{{obj}}" wx:key="id"
+         class="main_left_muen {{ currentIndex == item.id ?'active':'' }}"  id="{{item.id}}" 
+         data-item-index="{{index}}"
+         bind:tap="onActive">
+          <text class="left_muen_item">导航栏</text>
+        </view>
+        <!-- <view class="main_left_muen" id="left_muen2" bind:tap="onActive2">
+          <text class="left_muen_item">导航栏</text>
+        </view>
+        <view class="main_left_muen" id="left_muen3">
+          <text class="left_muen_item">导航栏</text>
+        </view>
+        <view class="main_left_muen">
+          <text class="left_muen_item">导航栏</text>
+        </view>
+        <view class="main_left_muen">
+          <text class="left_muen_item">导航栏</text>
+        </view> -->
+
+
+
+
+      </view>
+    </scroll-view>
+    <!-- 右边滑动 -->
+    <scroll-view class="scroll_y2" 
+    enhanced="true"
+    binddragstart="onAgstarts"
+    binddragend="onAgestartEnd"
+    style="height: 500px;"
+    scroll-into-view="{{selId}}"
+    scroll-into-view-within-extent
+    scroll-y
+    >
+      <view class="scroll_main_right">
+        <view class="main_right_conter">
+<!-- 每一个商品 -->
+          <view class="in_like_list"   wx:for="{{obj}}" wx:key="id"  >
+            <text class="like_list_text" id="order{{item.id}}">标题{{item.id}}</text>
+            <view class="like_list_item">
+              
+              <view class="list_item_left">
+                <image src="/assest/swiper/1.jpg" mode="" />
+              </view>
+              <view class="like_item_right">
+                <view class="right_head">
+                  <!-- -->
+                  <text class="right_head_text">店铺</text>
+                  <van-icon name="ellipsis" />
+                </view>
+                <view class="right_start">
+                  <text class="start1">4.8分</text>
+                  <text class="start2">月售1000+</text>
+                </view>
+                <view class="right_text_yan">
+                  米线米粉一碗香
+                </view>
+                <view class="right_you">
+                  <text>加入购物车</text>
+                  <!-- <van-icon name="plus" bind:tap="showPopup" /> -->
+                  <van-icon name="plus"  />
+                </view>
+              </view>
+
+            </view>
+        
+
+
+          </view>
+          <!-- <view class="in_like_list">
+            <text class="like_list_text">标题</text>
+            <view class="like_list_item">
+              
+              <view class="list_item_left">
+                <image src="/assest/swiper/1.jpg" mode="" />
+              </view>
+              <view class="like_item_right">
+                <view class="right_head">
+                  
+                  <text class="right_head_text">店铺</text>
+                  <van-icon name="ellipsis" />
+                </view>
+                <view class="right_start">
+                  <text class="start1">4.8分</text>
+                  <text class="start2">月售1000+</text>
+                </view>
+                <view class="right_text_yan">
+                  米线米粉一碗香
+                </view>
+                <view class="right_you">
+                  <text>加入购物车</text>
+                  <van-icon name="plus" bind:tap="showPopup" /> 
+                  <van-icon name="plus"  />
+                </view>
+              </view>
+
+            </view>
+        
+
+
+          </view>
+          <view class="in_like_list">
+            <text class="like_list_text">标题</text>
+            <view class="like_list_item">
+              
+              <view class="list_item_left">
+                <image src="/assest/swiper/1.jpg" mode="" />
+              </view>
+              <view class="like_item_right">
+                <view class="right_head">
+                  
+                  <text class="right_head_text">店铺</text>
+                  <van-icon name="ellipsis" />
+                </view>
+                <view class="right_start">
+                  <text class="start1">4.8分</text>
+                  <text class="start2">月售1000+</text>
+                </view>
+                <view class="right_text_yan">
+                  米线米粉一碗香
+                </view>
+                <view class="right_you">
+                  <text>加入购物车</text>
+                  
+                  <van-icon name="plus"  />
+                </view>
+              </view>
+
+            </view>
+          </view>
+          <view class="in_like_list">
+            <text class="like_list_text">标题</text>
+            <view class="like_list_item">
+              
+              <view class="list_item_left">
+                <image src="/assest/swiper/1.jpg" mode="" />
+              </view>
+              <view class="like_item_right">
+                <view class="right_head">
+               
+                  <text class="right_head_text">店铺</text>
+                  <van-icon name="ellipsis" />
+                </view>
+                <view class="right_start">
+                  <text class="start1">4.8分</text>
+                  <text class="start2">月售1000+</text>
+                </view>
+                <view class="right_text_yan">
+                  米线米粉一碗香
+                </view>
+                <view class="right_you">
+                  <text>加入购物车</text>
+             
+                  <van-icon name="plus"  />
+                </view>
+              </view>
+
+            </view>
+          </view> -->
+
+
+        </view>
+      </view>
+
+    </scroll-view>
+
+    <!-- 右边滑动加入购物车的弹出层 -->
+    <!-- 饮品类的才需要选择规格 -->
+    <!-- <van-popup
+        show="{{ isShow }}"
+        position="bottom"
+        custom-style="height: 80%;"
+        bind:close="onClose"
+      /> -->
+
+  </view>
+
+
+
+</view>

@@ -1,0 +1,167 @@
+<!--pages/search/search.wxml-->
+<view class="search_sear">
+<!-- 搜索框 -->
+  <view class="search">
+    <view class="search_main">
+      <van-icon name="search" />
+      <input type="text"/>
+      <button>搜索</button>
+    </view>
+  </view>
+  <!-- 搜索内容 -->
+<view class="search_banner_list">
+  <view class="search_ban_tab">
+      <van-tabs wx:if="{{1 ==1}}"  animated color="#ffa500">
+          <van-tab title="综合排序">
+          
+          <scroll-view scroll-y style="height: 1200rpx;">
+            <view class="in_like" >
+                  
+                  <view class="in_like_list">
+
+                    <view class="like_list_item">
+                      <view class="list_item_left">
+                        <image src="/assest/swiper/1.jpg" mode="widthFix"/>
+                      </view>
+                      <view class="like_item_right">
+                        <view class="right_head">
+                          <!-- -->
+                          <text class="right_head_text">店铺</text>
+                          <van-icon name="ellipsis" />
+                        </view>
+                        <view class="right_start">
+                          <text class="start1">4.8分</text>
+                          <text class="start2">月售1000+</text>
+                        </view>
+                        <view class="right_text_yan">
+                          米线米粉一碗香
+                        </view>
+                        <view class="right_you">
+                          <text>优惠</text>
+                          <van-icon name="plus" />
+                        </view>
+                      </view>
+
+                    </view>
+
+                    <view class="like_list_item">
+                      <view class="list_item_left">
+                        <image src="/assest/swiper/1.jpg" mode="widthFix"/>
+                      </view>
+                      <view class="like_item_right">
+                        <view class="right_head">
+                          <!-- -->
+                          <text class="right_head_text">店铺</text>
+                          <van-icon name="ellipsis" />
+                        </view>
+                        <view class="right_start">
+                          <text class="start1">4.8分</text>
+                          <text class="start2">月售1000+</text>
+                        </view>
+                        <view class="right_text_yan">
+                          米线米粉一碗香
+                        </view>
+                        <view class="right_you">
+                          <text>优惠</text>
+                          <van-icon name="plus" />
+                        </view>
+                      </view>
+
+                    </view>
+                    <view class="like_list_item">
+                      <view class="list_item_left">
+                        <image src="/assest/swiper/1.jpg" mode="widthFix"/>
+                      </view>
+                      <view class="like_item_right">
+                        <view class="right_head">
+                          <!-- -->
+                          <text class="right_head_text">店铺</text>
+                          <van-icon name="ellipsis" />
+                        </view>
+                        <view class="right_start">
+                          <text class="start1">4.8分</text>
+                          <text class="start2">月售1000+</text>
+                        </view>
+                        <view class="right_text_yan">
+                          米线米粉一碗香
+                        </view>
+                        <view class="right_you">
+                          <text>优惠</text>
+                          <van-icon name="plus" />
+                        </view>
+                      </view>
+
+                    </view>
+                    <view class="like_list_item">
+                      <view class="list_item_left">
+                        <image src="/assest/swiper/1.jpg" mode="widthFix"/>
+                      </view>
+                      <view class="like_item_right">
+                        <view class="right_head">
+                          <!-- -->
+                          <text class="right_head_text">店铺</text>
+                          <van-icon name="ellipsis" />
+                        </view>
+                        <view class="right_start">
+                          <text class="start1">4.8分</text>
+                          <text class="start2">月售1000+</text>
+                        </view>
+                        <view class="right_text_yan">
+                          米线米粉一碗香
+                        </view>
+                        <view class="right_you">
+                          <text>优惠</text>
+                          <van-icon name="plus" />
+                        </view>
+                      </view>
+
+                    </view>
+
+
+                  </view>
+                </view>
+          </scroll-view>
+
+          
+          </van-tab>
+          <van-tab  title="销量优先">内容 2</van-tab>
+          <van-tab title="距离近">内容 3</van-tab>
+          <van-tab title="速度快">内容 4</van-tab>
+        </van-tabs>
+
+        <view wx:if="{{1 ==2}}" class="lishi_search">
+          <view class="list_search_s">
+            <text class="line_text">历史搜索</text>
+            <view class="s_list">
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+
+            </view>
+            <text class="line_text2">搜索发现</text>
+            <view class="s_list">
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+              <van-button round type="info" size="small ">信息按钮</van-button>
+            </view>
+
+          </view>
+        </view>
+
+  </view>
+</view>
+
+</view>

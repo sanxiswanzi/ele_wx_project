@@ -1,0 +1,13 @@
+<!--pages/paySucess/paySucess.wxml-->
+<view class="pay_suss_top">
+  <view class="pay_suss">
+    <view class="pay_main">
+      <van-icon name="success" />
+      <text>支付成功</text>
+      <view class="main_order">
+        <van-button type="info">返回首页</van-button>
+        <van-button type="info">查看订单</van-button>
+      </view>
+    </view>
+  </view>
+</view>

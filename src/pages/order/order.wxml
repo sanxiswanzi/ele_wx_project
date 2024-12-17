@@ -1,0 +1,37 @@
+<!--pages/order/order.wxml-->
+<view class="order_list">
+  <view class="order">
+
+    <van-tabs animated>
+      <van-tab title="全部">
+        <orderListItem>
+        <button>再买一单</button> 
+     
+        </orderListItem>
+        <orderListItem>
+          <button>再买一单</button> 
+          </orderListItem>
+
+
+
+      </van-tab>
+      <van-tab title="进行中">
+        <orderListItem>
+        <button>待完成</button> 
+     
+        </orderListItem>
+      </van-tab>
+      <van-tab title="待评价">
+        <orderListItem>
+        <button>去评价</button> 
+        </orderListItem>
+      </van-tab>
+      <van-tab title="待退款">
+        <orderListItem>
+        <button>去退款</button> 
+        </orderListItem>
+      </van-tab>
+    </van-tabs>
+
+  </view>
+</view>

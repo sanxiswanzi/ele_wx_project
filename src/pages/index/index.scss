@@ -1,0 +1,181 @@
+/**index.wxss**/
+
+.index_main{
+
+  --textColor:white;
+  color999:#999;
+  --color6:#666;
+height: 1000rpx;
+// 最头部
+  .in_main_top{
+    width: 100%;
+    height: 160rpx;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    .main_top_text{
+      padding: 20rpx;
+      &  text:nth-child(1){
+        font-size: 40rpx;
+        color: (var(--textColor));
+      }
+      &  text:nth-child(2){
+        margin-left: 20rpx;
+      }
+    
+    }
+  }
+  // 搜索框
+  .in_seaer{
+
+    .van-cell__left-icon-wrap{
+      font-size: 46rpx;
+      color: skyblue;
+    }
+    input{
+      height: 80rpx;
+      margin: 0 10rpx;
+      border: 1px solid skyblue;
+      border-radius: 10rpx;
+      font-size: 30rpx;
+    }
+    button{
+      border-radius: 10rpx;
+      line-height: 70rpx;
+      height: 80rpx;
+      width: 140rpx;
+      font-size: 26rpx;
+      border: 1px solid skyblue;
+    }
+  }
+  // 快速导航
+  .index_tabbar{
+    width: 100%;
+
+    .in_tabber{
+      margin: 20rpx 0;
+      padding: 20rpx;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+     
+      background: -webkit-linear-gradient(to right, #f7b733);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right,orange, #dfb666,); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+
+
+      .in_list_item{
+        width: 200rpx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      image{
+        width: 80rpx;
+        height: 80rpx;
+      }
+
+
+    }
+  }
+
+  // 轮播图
+  .index_swiper{
+    padding: 20rpx;
+    box-sizing: border-box;
+    width: 100%;
+    height: 400rpx;
+    margin: 20rpx 0 ;
+    .in_swiper_item {
+      width: 100%;
+      height: 400rpx;
+      image{
+        width: 100%;
+        height: 400rpx;
+      }
+    }
+  }
+  // 猜你喜欢
+  .index_like{
+    width: 100%;
+
+
+      height: 800rpx;
+      .in_like{
+        padding: 20rpx;
+        box-sizing: border-box;
+  
+        //列表
+        .in_like_list{
+          display: flex;
+          flex-direction: column;
+  
+          .like_list_item{
+            margin: 20rpx;
+            display: flex;
+            flex-direction: row;
+            flex: .2; 
+  
+            .list_item_left{
+             
+              image{
+                border-radius: 20rpx;
+                width: 180rpx;
+                height: 180rpx;
+              }
+            }
+  
+            .like_item_right{
+              width: 100%;
+              margin-left: 20rpx;
+  
+              .right_head{
+                display: flex;
+                justify-content: space-between;
+                .right_head_text{
+                  font-size: 36rpx;
+                  font-weight: bold;
+                }
+                .van-icon-ellipsis{
+                  font-size: 36rpx;
+                  color: var(--color999);
+                }
+              }
+              .right_start{
+                display: flex;
+                justify-content: flex-start;
+  
+                .start1{
+                  font-size: 32rpx;
+                  color: orange;
+                }
+                .start2{
+                  margin-left: 20rpx;
+                  color:var(--color6);
+                }
+              }
+              .right_text_yan{
+                width: 300rpx;
+                background-color: orange;
+                padding: 8rpx;
+                box-sizing: border-box;
+                border-radius: 10rpx;
+              }
+  
+            }
+           
+          }
+  
+        } 
+  
+      }
+
+    
+    
+  }
+
+
+}
+
+

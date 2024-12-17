@@ -1,0 +1,177 @@
+/* pages/search/search.wxss */
+.search_sear{
+
+  --textColor:white;
+  color999:#999;
+  --color6:#666;
+
+  background-color: #f5f5f5;
+
+  .search{
+    
+    width: 90%;
+    padding: 20rpx;
+    margin:  0 auto;
+    .search_main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .van-icon-search{
+        font-size: 50rpx;
+      }
+      input{
+        border: 1px solid skyblue;
+        border-radius: 10rpx;
+        height: 70rpx;
+        margin: 0 10rpx;
+        color: orange;
+        
+      }
+      button{
+        font-size: 30rpx;
+        margin: 0;
+        color: orange;
+        height: 80rpx;
+      }
+
+    }
+
+  }
+
+  .search_banner_list{
+    display: flex;
+    justify-content: center;
+
+    .search_ban_tab{
+      width: 90%;
+    background-color: white;
+    border-radius: 20rpx !important;
+
+      .in_like{
+        padding: 20rpx;
+        width: 90%;
+        box-sizing: border-box;
+     
+        margin:  0 auto;
+    
+        //列表
+        .in_like_list{
+          display: flex;
+       
+          flex-direction: column;
+          .like_list_item{
+            padding: 20rpx;
+            height: 220rpx !important;
+            display: flex;
+            margin-top: 20rpx;
+            justify-content:flex-start;   
+            background-color: white;
+            border-radius: 10rpx;
+            
+    
+            .list_item_left{
+             display: flex;
+             align-items: center;
+              image{
+                border-radius: 20rpx;
+                width: 180rpx;
+              
+              }
+            }
+    
+            .like_item_right{
+              width: 100%;
+              margin-left: 20rpx;
+            
+    
+    
+              .right_head{
+                display: flex;
+                justify-content: space-between;
+                .right_head_text{
+                  font-size: 36rpx;
+                  font-weight: bold;
+                }
+                .van-icon-ellipsis{
+                  font-size: 36rpx;
+                  color: var(--color999);
+                }
+              }
+              .right_start{
+                display: flex;
+                justify-content: left;
+               text-align: left;
+                .start1{
+                  font-size: 32rpx;
+                  color: orange;
+                }
+                .start2{
+                  margin-left: 20rpx;
+                  color:var(--color6);
+                }
+              }
+              .right_text_yan{
+                width: 300rpx;
+                background-color: orange;
+                padding: 8rpx;
+                box-sizing: border-box;
+                border-radius: 10rpx;
+              }
+              .right_you{
+                margin-top: 6rpx;
+                display: flex;
+                justify-content: space-between;
+                .van-icon-plus{
+                  border-radius: 50%;
+                  background-color: skyblue;
+                  font-size: 40rpx;
+                  color: white;
+                }
+              }
+    
+            }
+           
+          }
+    
+        } 
+    
+      }
+      .van-tabs{
+      
+      }
+
+      .lishi_search{
+       
+        .list_search_s{
+          height: 700rpx;
+          padding: 20rpx;
+        
+          .line_text{
+            font-size: 30rpx;
+          }
+          .s_list{
+            margin: 30rpx 0;
+            height: 240rpx;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            van-button{
+              margin-left: 10rpx;
+            }
+          }
+
+
+
+
+
+        }
+      }
+
+    }
+
+
+  }
+
+}

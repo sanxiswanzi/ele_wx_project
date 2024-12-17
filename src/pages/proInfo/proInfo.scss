@@ -1,0 +1,203 @@
+/* pages/proInfo/proInfo.wxss */
+page {
+  --size: 32rpx;
+  --textColor: black;
+  --back:#eaeaea;
+  --tcolor:rgb(255, 255, 255);
+  --h999:#999999;
+  // 包裹整个页面的view
+  .my_top {
+    width: 100%;
+    padding: 20rpx;
+    background-color: var(--back);
+    box-sizing: border-box;
+
+    // 头部标题
+    .my_height {
+      width: 100%;
+      height: 120rpx;
+      background-color: var(--back);
+      color: var(--textColor);
+      display: flex;
+      align-items: center;
+      font-size: var(--size);
+
+    }
+    // 我的信息
+    .my_info {
+      width: 100%;
+      height: 180rpx;
+      display: flex;
+      flex: .2;
+      align-items: center;
+      background-color: var(--back);
+      // 左边头像
+      .info_left {
+        .info_left_img {
+          width: 120rpx;
+          height: 120rpx;
+          border-radius: 50%;
+        
+        }
+      }
+      // 右边信息
+      .info_right {
+        margin-left: 20rpx;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+    }
+
+    // 会员信息
+    .my_member{
+
+      width: 100%;
+      height: 180rpx;
+      background-color: #3f4658;
+      color: #9ba4b5;
+      border-radius: 20rpx 20rpx 0 0;
+      .my_member_main{
+        padding: 20rpx;
+        display: flex;
+        box-sizing: border-box;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+       
+        .member_left_text{
+          width: 170rpx;
+          padding: 6rpx;
+          border-radius: 15rpx;
+          color: var(--textColor);
+          background-color: var(--tcolor);
+        }
+        .my_member_right{
+          color: var(--tcolor);
+        }
+       
+      }
+
+    }
+    // 超级吃货卡
+    .my_supercard{
+      width: 100%;
+      height: 240rpx;
+      background-color: var(--tcolor);
+      padding: 20rpx;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-around;
+      flex: .3;
+      .my_item{
+        width: 180rpx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        image{
+          width: 80rpx;
+          height: 80rpx;
+        }
+        .my_item_text_span{
+          margin-left: 8rpx;
+          color: var(--h999);
+        }
+
+      }
+
+    }
+    // 常用工具
+    .offer_toods{
+      width: 100%;
+      margin-top: 20rpx;
+      .toods{
+        width: 100%;
+        padding: 20rpx;
+        height: 400rpx;
+        box-sizing: border-box;
+        background-color: var(--tcolor);
+        .offer_toods_text{
+          font-size: var(--size);
+          padding: 10rpx 0;
+        }
+        // 常用工具容器
+        .offer_toods_main{
+          display: flex;
+          width: 100%;
+          height: 380rpx;
+          justify-content: flex-start;
+          flex: .4;
+          flex-wrap: wrap;
+          .toods_main{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+            width: 160rpx;
+            height: 120rpx;
+            font-size: 24rpx;
+            image{
+              width: 80rpx;
+              height: 80rpx;
+            }
+
+          }
+         
+        }
+
+      }
+    }
+    // 下单得金豆
+
+    .my_foot_fun{
+      width: 100%;
+      padding: 20rpx;
+      box-sizing: border-box;
+      margin-top: 20rpx;
+      background-color: var(--tcolor);
+      .my_funt{
+        display: flex;
+        flex: .2;
+        justify-content: space-between;
+        .my_funt_left{
+          margin-left: 20rpx;
+          padding: 10rpx;
+          box-sizing: border-box;
+          background-color: var(--back);
+          border-radius: 15rpx;
+          width: 340rpx;
+          .funt_left_text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .text_yao{
+              display: block;
+              margin: 20rpx;
+            }
+
+              image{
+              width: 200rpx;
+              height: 140rpx;
+              margin: 20rpx 0 ;
+            }
+            button{
+              font-size: 22rpx;
+              border-radius: 100rpx;
+              width: 200rpx;
+              height: 60rpx !important;
+            }
+          }
+       
+        }
+      }
+    }
+    
+
+
+  }
+
+
+
+
+}

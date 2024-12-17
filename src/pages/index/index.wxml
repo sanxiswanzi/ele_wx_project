@@ -1,0 +1,112 @@
+<!--index.wxml-->
+<view class="index_main">
+<!-- 头部 -->
+  <view class="in_main_top">
+    <view class="main_top_text">
+      <text >三喜小铺</text>
+      <text>地址为广西南宁武鸣区民族大学</text>
+    </view>
+  </view>
+  <!-- 搜索框 -->
+  <view class="index_seaer">
+
+    <view class="in_seaer">
+      <van-cell center class="seaer_cell" icon="search" >
+        <view slot="title">
+          <input class="text_input" type="text"/>
+        </view>
+       <view slot="right-icon">
+        <button bind:tap="pushSearch" plain>搜索</button>
+       </view>
+      </van-cell>
+
+    </view>
+
+  </view>
+  <!-- 快速导航 -->
+<view class="index_tabbar">
+  <view class="in_tabber">
+
+    <view class="in_list_item" bind:tap="pushFoodList">
+      <image src="/assest/iconImg/cart_s.png" mode=""/>
+      <text>爆炒美食</text>
+    </view>
+    <view class="in_list_item">
+      <image src="/assest/iconImg/cart_s.png" mode=""/>
+      <text>汤类美食</text>
+    </view>
+    <view class="in_list_item">
+      <image src="/assest/iconImg/cart_s.png" mode=""/>
+      <text>小吃美食</text>
+    </view>
+    <view class="in_list_item">
+      <image src="/assest/iconImg/cart_s.png" mode=""/>
+      <text>团购美食</text>
+    </view>
+
+
+  </view>
+</view>
+
+<!-- 轮播图 -->
+<swiper 
+indicator-dots
+indicator-active-color
+autoplay
+interval="2000"
+circular
+class="index_swiper">
+  <swiper-item class="in_swiper_item">
+    <image  src="/assest/swiper/1.jpg"  />
+  </swiper-item>
+  <swiper-item class="in_swiper_item">
+    <image src="/assest/swiper/2.jpg"  />
+  </swiper-item>
+  <swiper-item class="in_swiper_item">
+    <image src="/assest/swiper/3.jpg" />
+  </swiper-item>
+</swiper>
+<!-- 猜你喜欢 -->
+<view class="index_like">
+
+
+  <view class="in_like" >
+    <text bind:tap="pushPaySucess">支付成功</text>
+    <text bind:tap="pushFoodDate">猜你喜欢</text>
+    <text bind:tap="pushLogin">登录页面</text>
+
+    <view class="in_like_list">
+      <!-- 猜你喜欢每一个item  wx:for="{{likeList}}" wx:key="d_id" -->
+      <view class="like_list_item">
+        <view class="list_item_left">
+          <image src="/assest/swiper/1.jpg" mode=""/>
+        </view>
+        <view class="like_item_right">
+          <view class="right_head">
+            <!-- -->
+            <text class="right_head_text">店铺</text>
+            <van-icon name="ellipsis" />
+           </view>
+          <view class="right_start">
+            <text class="start1">4.8分</text>
+            <text class="start2">月售1000+</text>
+          </view>
+          <view class="right_text_yan">
+            米线米粉一碗香
+          </view>
+          <view class="right_you">
+            优惠
+          </view>
+        </view>
+
+      </view>
+
+      
+
+
+    </view>
+  </view>
+
+</view>
+
+</view>
